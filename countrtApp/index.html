@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting People and save data</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+        }
+
+
+        button {
+            padding: 20px 40px;
+            display: block;
+            border: none;
+            margin: 5px;
+            color: white;
+            width: 100%;
+
+        }
+
+        button:nth-child(2) {
+            background-color: rgb(18, 62, 50);
+
+        }
+
+        button:nth-child(3) {
+            background-color: rgb(181, 28, 125);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div> People Enterd:
+            <p id="counting"> </p>
+        </div>
+
+        <button id="countbtn" onclick="Count()">Counting People</button>
+        <button onclick="save()"> Save Counting </button>
+
+        <div>
+            <div> Previous Entries
+                <p id="savedata"> </p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
