@@ -2,6 +2,7 @@ let counting = document.getElementById("counting");
 let savedata = document.getElementById("savedata");
 let count =0;
 
+
 function Count(){
     count =+ count +1;
     counting.textContent =count;
