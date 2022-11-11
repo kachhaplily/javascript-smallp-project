@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Notes</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" target="_self">
+            <input type="text" placeholder="enter value" id="inputvalue">
+            <button onclick="save()"> save</button>
+        </form>
+    </div>
+    <div id="txt"> </div>
+    <script>
+
+
+        var data = ["lily", "banaa", "orange", "apple"];
+        
+        function save() {
+            let value = document.getElementById("inputvalue").value;
+            if (value == "") {
+                alert("plese enter value in input field")
+            }
+            else {
+                data.push(value);
+                let txt = ""
+                data = data.map(function (value, index) {
+                    
+                    debugger;   
+                    txt += ` <li> ${value} <button id="dltbtn" 
+                        onClick=" deleteItem(${value})"> Delete </button></li>`       
+                });
+
+                document.getElementById('txt').innerHTML = txt;
+                document.getElementById("inputvalue").value = "";
+
+            }
+            
+        
+        }
+        function deleteItem(value){
+         console.log(value);
+        }
+
+      
+       
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // slicing a particular elemnt from aeeay 
+
+
+        // let values = 4
+
+        // let arr = [1, 2, 3, 4, 5, 3,4]
+
+        // arr =arr.splice(1,2)
+
+
+
+        // console.log(arr)
+// [ 1, 2, 4, 5 
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
