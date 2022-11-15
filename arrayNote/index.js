@@ -3,7 +3,7 @@ let isEdit = -1;//isEdit is a flag bydefault is false;
 
 const display = () => {
     let mydatadisplay = mydata.map(function (value, index) {
-        return `<div class="datarow"> <div>${value} </div> <div><button onClick="remove(${index})"><i class="fa fa-times" aria-hidden="true"></i> </button>  <button onClick="edit(${index})"> <i class="fa fa-pencil" aria-hidden="true"></i></button> </div></div> `
+        return `<div class="datarow"> <div>${value} </div> <div><button onClick="remove('${index}')"><i class="fa fa-times" aria-hidden="true"></i> </button>  <button onClick="edit('${index}')"> <i class="fa fa-pencil" aria-hidden="true"></i></button> </div></div> `
     });
     document.getElementById("datadisplay").innerHTML = mydatadisplay.join(" ");
 }
@@ -29,8 +29,8 @@ const save = () => {
 }
 
 
-const remove = (index) => {
-    var myfilterdata = mydata.filter(function (value, filterindex) {
+const remove =(index) => {
+    var myfilterdata = mydata.filter(function (value,filterindex) {
         if (filterindex != index) {
             return value;
         }

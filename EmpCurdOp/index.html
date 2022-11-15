@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Emp CURD Opration</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <style>
+      body{
+         background: rgb(255, 255, 255);
+      }
+      
+      .container {
+         max-width: 1200px;
+         margin: auto;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         padding: 20px;
+         margin: 5px;
+      }
+
+      input {
+         display: block;
+         margin: 5px;
+         padding: 12px 60px 12px 12px;
+         border: none;
+         box-shadow: rgb(161, 188, 189) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+         border-radius: 3px;
+         
+      }
+
+      .btn {
+         padding: 12px 50px;
+         font-size: 18px;
+         font-weight: 500;
+         background: rgb(30, 73, 69);
+         border: 1px solid rgb(68, 97, 99);
+         color: white;
+      }
+
+      button:hover {
+         background: black;
+         color: white;
+      }
+
+      table {
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      tr {
+         width: 100px;
+      }
+      td {
+         padding: 30px;
+         text-align: center;
+      }
+
+      th {
+         border-bottom: 2px solid black;
+         padding: 10px;
+      }
+      .btn1{
+         padding: 10px 30px;
+         border: none;
+      }
+   </style>
+</head>
+
+<body>
+
+
+   <form action="#" target="_self">
+      <div class="container">
+         <input type="text" id="empName" placeholder="Name..">
+         <input type="text" id="empLastName" placeholder="LastName">
+         <input type="text" id="empCity" placeholder="City">
+         <input type="number" id="empAge" placeholder="Age">
+         <button class="btn" onclick="addItem()"> Save</button>
+
+   </form>
+   </div>
+
+   <div class="container">
+      <table>
+         <th>fname</th>
+         <th>lname</th>
+         <th>city</th>
+         <th>age</th>
+         <th>action</th>
+         <tbody id="tabeldata"></tbody>
+      </table>
+   </div>
+
+   <script src="index.js"></script>
+
+</body>
+
+</html>
