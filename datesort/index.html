@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datesort</title>
+</head>
+<body>
+
+    <input type="date" id="dates">
+    <button onclick="save()"> Save</button>
+    <!-- <button onclick="sortdate()"> Save</button> -->
+
+    <br>
+    <div id="showdata"> </div>
+    <script>
+     const datedata=[];
+
+    function save(){
+        let mydate=document.getElementById("dates").value;
+        datedata.push(new Date(mydate));
+
+        let sorteddate= datedata.sort(function(a,b){
+            return (a-b);
+        })
+        
+        let datedsiplay=sorteddate.map((element)=>{
+            return(` <div>${element}</div>`)
+        })
+
+
+
+        document.getElementById("showdata").innerHTML=datedsiplay.join(" ");
+    }
+    function sortdate(){}
+
+  
+
+
+
+     
+
+    
+    </script>
+</body>
+</html>

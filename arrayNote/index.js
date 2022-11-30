@@ -30,13 +30,14 @@ const save = () => {
 
 
 const remove =(index) => {
-    var myfilterdata = mydata.filter(function (value,filterindex) {
-        if (filterindex != index) {
-            return value;
-        }
-    });
+    mydata.splice(index,1);
+    // var myfilterdata = mydata.filter(function (value,filterindex) {
+    //     if (filterindex != index) {
+    //         return value;
+    //     }
+    // });
     //  var myfilterdata = mydata.splice(index[0],index[1])
-    mydata = myfilterdata;
+    // mydata = myfilterdata;
     display();
 
 }

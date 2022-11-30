@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prctl2</title>
+</head>
+<body>
+<div id="showdata">
+    <table>
+        <thead>
+            <tr>
+                <th> Author</th>
+                <th> title</th>
+                <th> id</th>
+
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </thead>
+    </table>
+
+    <button onclick="sort()">Sort </button>
+    
+</div>
+
+
+    <script>
+        var library=[
+            {
+                author:'bill gates',
+                title:'The Road Aheda',
+                lilraryId:1254,
+            },
+            {
+                author:'steve jobs',
+                title:'Walter isaacson',
+                lilraryId:4264,
+            },
+            {
+                author:'Suzanne collins',
+                title:'Mockingjay:the final book',
+                lilraryId:3245,
+            }
+        ];
+            // let showdata= library.map((element)=>{
+            //         return(
+            //             ` <tr><td>${element.author}</td> 
+            //             <td>${element.title}</td> 
+            //             <td>${element.lilraryId}</td> 
+            //             </tr>
+            //             `
+            //         )
+            //     })
+            //     document.getElementById("tbody").innerHTML=showdata.join(" ");
+
+            
+            let data = library.sort((a,b)=>{
+               if(a.title - b.title){
+                return 1
+               }
+                else{
+                    return -1
+                }
+               
+            });
+            // console.log(library);
+            console.log(data);
+                
+               
+               
+    </script>
+    
+</body>
+</html>

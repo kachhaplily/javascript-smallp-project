@@ -6,10 +6,7 @@
 
  let isEdit=-1;
  let empdata = [
-    // {
-    //    [key1]:"", 
-    //    [key2]:""
-    // }
+  
  ]
 
 

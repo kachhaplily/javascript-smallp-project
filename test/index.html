@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st vowel</title>
+</head>
+<body>
+    <input type="text" id="mytxt" >
+    <button onclick="showvowel()"> Show Vowels</button>
+   <div> Your String:<p id="orgstring"></p></div> 
+  <div> Number of Vowels are: <span id="showdata"></span></div>
+  <div> Number of Vowels <span id="number"></span></div>
+    
+    <script>
+           const vowel=['a','e','i','o','u'];
+        const showvowel=()=>{
+
+        
+        let mytxt= document.getElementById("mytxt").value;
+     
+        let sepreattxt=mytxt.split("");
+         let mytext=sepreattxt.filter((element)=>{
+            for(const i of vowel){
+                if(element==i){
+                    return element;
+                }
+            }
+          
+         });
+     
+
+         document.getElementById("orgstring").innerHTML=mytxt;
+        document.getElementById("showdata").innerHTML=mytext;
+        document.getElementById("number").innerHTML=mytext.length;
+
+        // console.log(mytext);
+        }
+
+    </script>
+</body>
+</html>

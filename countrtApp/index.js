@@ -5,6 +5,7 @@ let count =0;
 
 function Count(){
     count =+ count +1;
+    console.log(count);
     counting.textContent =count;
 }
 

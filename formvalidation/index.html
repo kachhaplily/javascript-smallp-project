@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<style>
+    body {
+        background: #f5f5f5;
+        color: #28282B;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 100px 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: bolder;
+
+    }
+
+    form {
+        position: relative;
+    }
+
+
+    .container div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    input {
+        margin: 15px;
+        padding: 10px 70px 10px 5px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: rgb(24, 51, 82) 3px 3px 6px 0px inset, rgba(253, 253, 253, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .btn {
+        
+        padding: 12px 50px;
+        margin: 5px;
+        border: none;
+        background: rgb(60, 60, 60);
+        color: #f5f5f5;
+        font-size: 15px;
+        font-weight: bolder;
+
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+        width: 15%;
+    }
+
+    tr:nth-child(even) {
+        background: rgb(212, 225, 25);
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <form id="myfrm" target="_self">
+            <div>Name<input type="text" value="" name="name" ></div>
+            <div> LastName <input type="text" value="" name="lastname" > </div>
+            <div> Email <input type="email" value="" name="email" > </div>
+            <div> Phone <input type="tel" value="" name="phone"></div>
+            <div> Male<input type="radio" name="gender" value="Male"></div>
+            <div> Female<input type="radio" name="gender" value="Female"> </div>
+            <div>Frontend Techh
+                html<input type="checkbox"  name="code"  value="Html" class="chk">
+                js <input type="checkbox"   name="code"  value="javascript" class="chk">
+                CSS  <input type="checkbox"  name="code" value="css" class="chk">
+                python  <input type="checkbox"  name="code" value="python" class="chk">
+            </div>
+            <div>
+
+                Select Game
+                <select name="Game" >
+                    <option value="cricket"> Cricket</option>
+                    <option value="football"> football</option>
+                    <option value="hockey"> hockey</option>
+
+                </select>
+            </div>
+            
+        </form>
+        <button onclick="Save()" class="btn ">Submit </button>
+
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Code</th>
+                    <th> Game</th>
+                </tr>
+            <tbody id="tbody">
+            </tbody>
+            </thead>
+        </table>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

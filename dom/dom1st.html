@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+
+    <div>
+
+        <input type="text" value="" id="name">
+        <input type="text" value="" id="marks">
+        <button onclick="add()">Submit</button>
+
+
+    </div>
+    <br>
+    <br>
+
+    <div>
+
+        <input type="text" id="changemarks" />
+
+        <input type="button" value="changevalue" onclick="chnagevalue()" />
+
+
+
+        <!-- <input type="button" value="checkbox" onclick="mycheckbox()" /> -->
+    </div>
+
+    <div id="displaydata"></div>
+
+
+    <script>
+
+        let lk = "";
+
+
+        add = () => {
+            let inputdata = parseInt(document.getElementById("marks").value);
+            let inputname = document.getElementById("name").value;
+
+
+            document.getElementById('displaydata').innerHTML += `<div>
+                <label>${inputname}</label> 
+                 <input type="text" value=${inputdata} class="numchange" id="newchange"/> 
+                <button onclick="increment(this)">increment</button> <button onclick="decrement(this)">decrement</button>
+                <input type="checkbox" class='test' value=${inputdata}> 
+                  </div>`
+
+
+        }
+
+        increment = (inputdata) => {
+            lk = parseInt((inputdata.parentElement.getElementsByTagName("input")[0].value));
+            let newince = +lk + 1;
+            inputdata.parentElement.getElementsByTagName("input")[0].value = newince;
+
+
+
+        }
+        decrement = (inputdata) => {
+            lk = parseInt((inputdata.parentElement.getElementsByTagName("input")[0].value));
+            let newince = +lk - 1;
+            inputdata.parentElement.getElementsByTagName("input")[0].value = newince;
+            // console.log(ince);
+
+        }
+
+        function chnagevalue() {
+          let changemarks = document.getElementById("changemarks").value;
+
+            let a = document.querySelectorAll("input:checked").length;
+
+            if (a == 0) {
+                let inputele_length = document.getElementsByClassName("numchange").length;
+                for (i = 0; i < inputele_length; i++) {
+                    document.querySelectorAll(".numchange")[i].value = changemarks;
+                }
+            }
+
+            else {
+                let inputele_length = document.getElementsByClassName("numchange").length;
+                for (i = 0; i < inputele_length; i++) {
+
+                    let d = document.getElementsByClassName("numchange")[i].parentElement.querySelector("input:checked");
+                        console.log(d);
+                    if (d) {
+                        document.getElementsByClassName("numchange")[i].value=changemarks;
+
+                    }
+                }
+
+
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

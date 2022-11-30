@@ -1,0 +1,83 @@
+body {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.fa{
+    font-size: 25px;
+}
+.fa-times{
+    color: red;
+}
+#cartCountrt{
+    font-size: 20px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
+.navbar {
+    padding: 20px 10px;
+    background: rgb(192, 192, 192);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productcontainer {
+    max-width: 1500px; margin: auto;
+    /* display: flex;
+   
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    padding: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+
+}
+
+.card img{
+max-width: 30%;
+object-fit: cover;
+}
+.price{
+font-size: 50px;
+}
+.card span ,.card a {
+text-align: center;
+font-size: 20px;
+display: block;
+background: rgb(231, 231, 231);
+text-decoration: none;
+padding: 10px;
+margin: 5px;
+}
+.card h5{
+font-size: 15px;
+}
+.card button{
+/* position: absolute; */
+right: 0;
+top: 2px;
+padding: 10px;
+border: none;
+}
+
+
+.totalcost{
+    background: yellow;
+    display: block;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <label>All</label>
+        <input type="checkbox" onclick="myParent(this)" />
+        <div class="first">
+            <label>Checkbox1</label>
+            <input type="checkbox"  onclick="myParent(this)" />
+
+            <div>
+                <input type="checkbox" />
+            </div>
+            <div>
+                <input type="checkbox" />
+            </div>
+            <div>
+                <input type="checkbox" />
+            </div>
+            <div>
+                <input type="checkbox" />
+            </div>
+
+
+        </div>
+
+        <div class="secound">
+
+            <label>Checkbox1</label>
+            <input type="checkbox" onclick="myParent(this)" />
+
+            <div>
+                <input type="checkbox"  />
+            </div>
+            <div>
+                <input type="checkbox"  />
+            </div>
+            <div>
+                <input type="checkbox"  />
+            </div>
+            <div>
+                <input type="checkbox"  />
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+
+        function myParent(element) {
+        
+            let d = element.parentElement.querySelectorAll("input[type='checkbox']");
+           console.log(d)
+           
+
+            for (let i = 0; i < d.length; i++) {
+                if (element.checked == true ) {
+                    d[i].checked = true;
+                   
+                    
+                }
+              
+                else {
+                    d[i].checked = false;
+                }
+
+            }
+
+            for (let i = 0; i < d.length; i++) {
+                d[i].addEventListener("click", function () {
+
+                if(d[i].checked==false ){
+                    element.checked=false;
+                    
+                }
+
+                })
+
+
+            }
+          
+        };
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
