@@ -27,11 +27,9 @@ body {
 
 .productcontainer {
     max-width: 1500px; margin: auto;
-    /* display: flex;
-   
+    display: flex;   
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
+    justify-content: center;
     padding: 20px;
 }
 
@@ -69,15 +67,28 @@ margin: 5px;
 font-size: 15px;
 }
 .card button{
-/* position: absolute; */
 right: 0;
 top: 2px;
 padding: 10px;
 border: none;
+margin: 5px;
+}
+.card .remove{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+}
+.card .Quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
 .totalcost{
     background: yellow;
     display: block;
+    width: 100%;
 }
