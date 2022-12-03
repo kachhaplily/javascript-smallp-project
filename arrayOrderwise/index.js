@@ -8,6 +8,7 @@ display = (postdata) => {
     newpostdata = postdata;
     // console.log(postdata);
     let key = Object.keys(postdata[0]);
+    // console.log(key);
     dupkey = key;
     let theading = key.map((element, index) => {
         return `<th>${element} <button onclick=" up(${index})" > ⬆ 👍  </button>   <button onclick=" down(${index})" > ⬇ 👎  </button> </th>  `
@@ -30,6 +31,7 @@ display = (postdata) => {
 }
  up = (index) => {
     let data = dupkey[index]
+    console.log(data);
 
     let sorting = newpostdata.sort((a, b) => {
 

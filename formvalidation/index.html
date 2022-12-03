@@ -78,10 +78,10 @@
 
     <div class="container">
         <form id="myfrm" target="_self">
-            <div>Name<input type="text" value="" name="name" ></div>
+            <div>Name<input type="text" value="" name="name" > <b><span class="formerror"></span></b></div>
             <div> LastName <input type="text" value="" name="lastname" > </div>
             <div> Email <input type="email" value="" name="email" > </div>
-            <div> Phone <input type="tel" value="" name="phone"></div>
+            <div> Phone <input type="tel" value="" name="phone" maxlength="10" placeholder="+91" onkeypress="return checkNumber(event)"></div>
             <div> Male<input type="radio" name="gender" value="Male"></div>
             <div> Female<input type="radio" name="gender" value="Female"> </div>
             <div>Frontend Techh

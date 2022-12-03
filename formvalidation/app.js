@@ -4,7 +4,8 @@ console.log(formdata);
 
 const Save = () => {
     let dbobj = {}
-    for (let i = 0; i <formdata.length; i++) {
+    let validation=true;
+    for (let i = 0; i < formdata.length; i++) {
         switch (formdata.elements[i].type) {
             case 'radio':
                 if (formdata.elements[i].checked) {
@@ -17,7 +18,7 @@ const Save = () => {
                         dbobj[formdata.elements[i].name] = [formdata.elements[i].value];
                     }
                     else {
-                    dbobj[formdata.elements[i].name].push(formdata.elements[i].value)
+                        dbobj[formdata.elements[i].name].push(formdata.elements[i].value)
                     }
                 }
                 break;
@@ -25,9 +26,45 @@ const Save = () => {
                 dbobj[formdata.elements[i].name] = formdata.elements[i].value;
                 break;
         }
+      
+       
     }
+
+    //    myjson.push(dbobj);
+    // displaydata(myjson)
+    for(let i in formdata){
+        if(formdata.elements[i]!==undefined)
+        {
+            switch (formdata.elements[i].type) {
+                case 'text': if(formdata.elements[i].value==0){
+                    validation= false;
+                }
+                break;
+                case 'tel':if(formdata.elements[i].value==0)
+                validation= false;
+                    break;
+                case 'email':
+                    if(formdata.elements[i].value==0)
+                validation= false;
+                break;
+               
+              
+               
+               
+                
+                
+                
+            
+               
+            }
+        }
+    }
+
+    if(validation==true){
     myjson.push(dbobj);
-    displaydata( myjson)
+    displaydata(myjson)
+
+    }
 
 }
 displaydata = (myjson) => {
@@ -42,8 +79,19 @@ displaydata = (myjson) => {
         return text;
 
     }
-    document.getElementById("tbody").innerHTML=displaydb.join(" ");
+    document.getElementById("tbody").innerHTML = displaydb.join(" ");
 }
 
 
+
+// validation 
+checkNumber = (evt) => {
+    if (Number.isInteger(parseInt(evt.key))) {
+        console.log(evt.key);
+     }
+     else{
+         evt.preventDefault();
+     }
+}
+ 
 

@@ -88,7 +88,9 @@ margin: 5px;
 
 
 .totalcost{
+    width: 100%;
+    margin: auto;
     background: yellow;
     display: block;
-    width: 100%;
+    
 }

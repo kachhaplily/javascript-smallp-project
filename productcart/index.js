@@ -8,13 +8,14 @@ fetch(" https://fakestoreapi.com/products").then((response) => response.json()).
 display = (value) => {
     products = value;
     let productdata = value.map((element, index) => {
-        // console.log(element);
+        console.log(element);
         return (
             `  <div class="card">
                 <img src="${element.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"> ${element.title}</h5>
                     <p class="card-text">${element.description}</p>
+                     <p>Rating <span> ${element.price}  </span> </p>
                     <span> price ${element.price}</span>
                     <br>
                     <a href="#" class="btn btn-primary"  onclick="additem(${index})">Add To Cart</a>
@@ -112,7 +113,7 @@ incre = (index) => {
 
 }
 decre = (index) => {
-    if (myCartData[index].qty == 0) {
+    if (myCartData[index].qty == 1) {
         return false
     }
     else {
