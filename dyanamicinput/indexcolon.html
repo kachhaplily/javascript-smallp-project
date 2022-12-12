@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy input using colon </title>
+    
+</head>
+<body>
+  <div id="pdiv" >
+    <input type="text" placeholder="enter education">
+    <input type="text" placeholder="marks">
+  </div>
+  <div id="pdiv2">  </div>
+    <button class="btn" onclick="submit()"> Add input</button>
+
+
+    <script>
+        submit=()=>{
+        let inputs=  document.getElementById('pdiv')
+        let colonchild = inputs.cloneNode(true)
+        console.log(colonchild);
+        document.getElementById("pdiv2").appendChild(colonchild);
+        }
+    </script>
+
+</body>
+</html>

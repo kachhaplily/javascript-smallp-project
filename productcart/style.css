@@ -56,7 +56,6 @@ font-size: 50px;
 }
 .card span ,.card a {
 text-align: center;
-font-size: 20px;
 display: block;
 background: rgb(231, 231, 231);
 text-decoration: none;
@@ -66,12 +65,16 @@ margin: 5px;
 .card h5{
 font-size: 15px;
 }
+.card p{
+    font-size: 10px;
+}
 .card button{
 right: 0;
 top: 2px;
 padding: 10px;
 border: none;
-margin: 5px;
+margin: 2px;
+
 }
 .card .remove{
     position: absolute;

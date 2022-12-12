@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyanamic input</title>
+    <style>
+        #frm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+        .btn{
+            position: relative;
+          
+            left: 50%;
+            transform: translateX(-50%);
+            border: none;
+            padding: 12px 50px;
+            margin: 10px;
+            
+        }
+        input{
+            border: none;
+            padding: 15px 70px 12px 5px;
+            box-shadow: rgba(47, 17, 137, 0.15) 1.95px 1.95px 2.6px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" id="btn"> Add Education</button>
+
+    <form id="frm"></form>
+    <button class="btn" onclick="display()"> Submit</button>
+
+
+
+    <table id="customers">
+        <thead>
+            <tr id="head">   
+            </tr>
+        </thead>
+        <tbody id="tbody"> </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>

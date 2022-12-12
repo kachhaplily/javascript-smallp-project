@@ -105,9 +105,11 @@ function display(mydata) {
   </article>`)
 
   })
+  
 
   document.getElementById("section-center").innerHTML = myhtml.join(" ");
 }
+display(menu);
 
 function filterarray(category) {
   const myfilterData = menu.filter((value, index) => {
@@ -120,6 +122,6 @@ function filterarray(category) {
 
 
 }
-display(menu);
+
 
 document.getElementById("buttoncon").innerHTML = mybutton.join(" ");

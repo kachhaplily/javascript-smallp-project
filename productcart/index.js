@@ -2,32 +2,70 @@
 let myCartData = [];
 let products = [];
 
-fetch(" https://fakestoreapi.com/products").then((response) => response.json()).then((value) => { display(value) })
+fetch(" https://fakestoreapi.com/products").then((response) => response.json()).then((value) => { display(value)  })
 
 
 display = (value) => {
     products = value;
+
     let productdata = value.map((element, index) => {
-        console.log(element);
-        return (
-            `  <div class="card">
+        return `  <div class="card">
                 <img src="${element.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"> ${element.title}</h5>
                     <p class="card-text">${element.description}</p>
-                     <p>Rating <span> ${element.price}  </span> </p>
                     <span> price ${element.price}</span>
                     <br>
                     <a href="#" class="btn btn-primary"  onclick="additem(${index})">Add To Cart</a>
                 </div>
          
             </div>
-               `
-        );
+               `;
+
     });
+
 
     document.getElementById("productsId").innerHTML = productdata.join(" ");
 }
+
+
+// search item 
+
+SearchItem = () => {
+    let txt = document.getElementById("srchitem").value;
+
+
+    if (txt.length !== 0) {
+        let newfilter = products.filter((elem, index) => {
+            return elem.title.includes(txt);
+
+        })
+        display(newfilter);
+    }
+    else {
+        // alert(" jiii");
+    console.log(products);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function additem(index) {

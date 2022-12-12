@@ -6,7 +6,7 @@ let myarray = [];
 let keys = []
 display = (postdata) => {
     myarray = postdata;
-    displaytb(postdata);
+    displaytb(postdata);//for data map 
 
     for (const key in postdata[0]) {
         keys.push(key);
@@ -21,6 +21,8 @@ display = (postdata) => {
 
    
 }
+
+///for asc
 up = (index) => {
     let data = keys[index]
     console.log(data);
@@ -37,6 +39,7 @@ up = (index) => {
     console.log(sorting);
 
 }
+// for dsc 
 down=(index)=>{
     let data = keys[index]
     console.log(data);
@@ -53,7 +56,7 @@ down=(index)=>{
     console.log(sorting);
 
 }
-
+// for table data 
 displaytb=(value)=>{
     let tbodycontent = myarray.map((element) => {
         return (
