@@ -91,7 +91,8 @@ let mybutton = menu.map(function (element, index) {
 function display(mydata) {
   let myhtml = mydata.map(function (element, index) {
 
-    return (`<article class="menu-item">
+    return (
+      `<article class="menu-item">
     <img src="${element.img}" alt="menu item" class="photo" />
     <div class="item-info">
       <header>
@@ -105,23 +106,15 @@ function display(mydata) {
   </article>`)
 
   })
-  
-
   document.getElementById("section-center").innerHTML = myhtml.join(" ");
 }
 display(menu);
 
 function filterarray(category) {
+ 
   const myfilterData = menu.filter((value, index) => {
-
     return value.category == category;
   })
-
-
   display(myfilterData);
-
-
 }
-
-
 document.getElementById("buttoncon").innerHTML = mybutton.join(" ");

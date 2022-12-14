@@ -2,7 +2,7 @@
 let myCartData = [];
 let products = [];
 
-fetch(" https://fakestoreapi.com/products").then((response) => response.json()).then((value) => { display(value)  })
+fetch(" https://fakestoreapi.com/products").then((response) => response.json()).then((value) => { display(value) })
 
 
 display = (value) => {
@@ -33,24 +33,12 @@ display = (value) => {
 
 SearchItem = () => {
     let txt = document.getElementById("srchitem").value;
-
-
-    if (txt.length !== 0) {
-        let newfilter = products.filter((elem, index) => {
-            return elem.title.includes(txt);
-
-        })
-        display(newfilter);
-    }
-    else {
-        // alert(" jiii");
-    console.log(products);
-
-    }
-
+    const myfilterData = products.filter((value) => {
+        return value.title.includes(txt)});
+        // display(myfilterData);
+        console.log(myfilterData)
+        products=myfilterData
 }
-
-
 
 
 
