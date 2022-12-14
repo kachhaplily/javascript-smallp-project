@@ -81,10 +81,19 @@ const menu = [
   },
 ];
 
-let mybutton = menu.map(function (element, index) {
 
-  return `<div><button type="button" class="filter-btn" onclick=filterarray('${element.category}')>${element.category}</button></div>`
+
+let mybutton2 = menu.map(function (element) {
+  return element.category
 });
+ let db=Array.from( new Set(mybutton2));
+//  console.log(db)
+
+
+ let mybutton = db.map(function (element) {
+  return `<div><button type="button" class="filter-btn" onclick=filterarray('${element}')>${element}</button></div>`
+});
+ 
 
 
 
