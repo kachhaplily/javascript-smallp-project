@@ -1,0 +1,7 @@
+1. Complete prev task
+2. Remove duplicate object
+3. User Complete Task one
+4. display data of following api and perform search om name and username  refer the below api for same
+https://jsonplaceholder.typicode.com/users
+
+5. you need to perform the data sorting for each column of table.

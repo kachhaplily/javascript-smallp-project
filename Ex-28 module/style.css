@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ............................ Registration form .............................. */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    background-color: rgb(209, 228, 235);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8a3ab9;
+    margin: 5px;
+}
+.forgotten{
+ margin-left: 40%;
+ font-size: 18px;   
+}
+.btn{
+    margin: 5px;
+    margin-left: 30%;
+    padding: 5px 33px;
+    background-color: transparent;
+    border: 2px solid #3306fd;
+    border-radius: 8px;
+    color: rgb(214, 14, 131);
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: #3306fd;
+    color: #fff;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 120px;
+    display: flex;
+    color: #fff;
+}
+.Ishugram{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+h3{
+text-align: center;
+margin: 10px;
+}
+
+#frm{
+    /* display: none; */
+    width: 55%;
+    margin: auto;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    padding:30px 20px;
+    border-radius: 10px;
+}
+#login{
+    width: 55%;
+    margin: auto;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    padding:30px 20px;
+    border-radius: 10px;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    
+}
+input{
+    margin: 5px;
+    padding: 3px 5px;
+    outline: none;
+    border: none;
+}
+.tream{
+    width: 300px;
+}
+select{
+    margin: 5px;
+}
+input[type="submit"]{
+    padding: 5px 30px;
+    font-size: 16px;
+    margin: 10px 40%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #8a3ab9;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background: #8a3ab9;
+}
+
+
+.formerror {
+    color: red;
+}
+
+
+
+/* ........................... table css .......................... */
+table, td, th {  
+    border: 1px solid rgb(136, 136, 136);
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px;
+}
+
+th, td {
+    padding: 15px;
+}

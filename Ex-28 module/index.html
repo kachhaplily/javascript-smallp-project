@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href=""> <img src="image/lastfm-logo.png" alt="logo"></a>
+                <span class="Ishugram">Ishugram</span>
+            </div>
+            <div>
+                <a href="index.html">
+                    <button class="btn" onclick="loginS()">Login</button>
+                </a>
+                <!-- <p>🤦‍♀️🙌👍🤦‍♂️🤦‍♀️</p> -->
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="frm">
+            <form action="" id="frm1">
+                <h3>Sign Up</h3>
+                
+                <!-- <label for="title">Please Select Mr/Mrs/Miss :-</label> -->
+                <select name="title" id="title">
+                    <option value="Mr">Mr</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Mrs">Mrs</option>
+                </select>
+
+                <!-- <div>
+                    <label for="title">Please Select Mr/Mrs/Miss :-</label>
+                    <input type="text" name="title" id="title" placeholder="Mr/Miss/Mrs" required />
+                    <b><span class="formerror"></span></b>
+
+                </div> -->
+                <div>
+                    <label for="firstname">Enter Your Name :-</label>
+                    <input type="text" name="firstName" id="firstName"  placeholder="Enter Your Name" required />
+                    <b><span class="formerror"></span></b>
+
+                </div>
+                
+                <div>
+                    <label for="lastName">Enter Your Last Name :-</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" required />
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div>
+                    <label for="email">Enter Your Email :-</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your email" required />
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div>
+                    <label for="password">Enter Your Password:-</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password" required />
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div>
+                    <label for="confirmPassword">Enter Your Con Password :-</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword"
+                        placeholder="Enter Your confirmPassword" required />
+                    <b><span class="formerror" id="check"></span></b>
+                </div>
+                <div>
+                    <label class="tream">
+                        <input type="checkbox" name="trem">I Accept the trems and condition</label>
+                </div>
+            </form>
+            <input type="submit" value="Sign up" onclick="signUp()" />
+        </div>
+
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr id="theadP">
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tbodyP">
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,15 @@
+BE 2
+BE 1
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
+https://www.c-sharpcorner.com/UploadFile/13048b/model-validation-in-Asp-Net-mvc909/
+
+
+https://www.c-sharpcorner.com/article/handleerror-action-filter-in-asp-net-mvc/
+https://www.tutorialsteacher.com/mvc/action-filters-in-mvc
+https://www.c-sharpcorner.com/article/asp-net-mvc-performance-bundling-and-minification/
+
+
+https://www.c-sharpcorner.com/article/outputcache-action-filter-in-asp-net-mvc/
+https://www.tutorialsteacher.com/mvc/action-filters-in-mvc
+https://www.c-sharpcorner.com/article/forms-authentication-in-mvc/

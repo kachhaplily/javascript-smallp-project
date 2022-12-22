@@ -1,0 +1,37 @@
+https://cloudnweb.dev/2019/08/understanding-eventemitter-in-node-js-with-a-usecase/
+https://www.geeksforgeeks.org/node-js-yargs-module/
+https://www.coderrocketfuel.com/article/create-a-rest-api-with-node-js-and-express
+https://blog.bitsrc.io/process-of-building-a-rest-api-be5ad410c2e9
+https://medium.com/swlh/build-your-first-api-with-express-generator-sequelize-and-cli-2f7494cc517b
+
+
+
+https://www.bezkoder.com/node-js-express-sequelize-mysql/
+
+
+ContenType : json
+
+
+
+applicayion
+
+Introduction to MongoDB
+http://www.differencebetween.net/technology/difference-between-rdbms-and-mongodb/
+https://www.knowledgenile.com/blogs/pros-and-cons-of-mongodb/
+
+mongodb
+https://www.w3resource.com/mongodb-exercises/
+
+
+https://blog.codecentric.de/files/2012/12/MongoDB-CheatSheet-v1_0.pdf
+https://www.digitalocean.com/community/tutorials/how-to-create-queries-in-mongodb#step-1-preparing-the-sample-database
+
+https://www.tutorialspoint.com/mongodb/mongodb_overview.htm
+https://www.tutorialspoint.com/mongodb/mongodb_query_document.htm
+https://dbdmg.polito.it/wordpress/wp-content/uploads/2020/11/06-MongoDB-query-exercises.pdf
+
+1. insert->depricated-> singl/multipe
+
+
+2. insertmany-> latest-> only muliple
+3. insertone-> one
