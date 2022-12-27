@@ -11,13 +11,10 @@ xhttp1.onload = function () {
 }
 xhttp2.onload = function () {
     let resp = JSON.parse(this.responseText);
-
     resp.forEach(element => {
-        for (let i = 0; i < albums.length; i++) {
-            albums[i].body = element.body
-        
-        }
-    });
+        userbody.push(element.body)
+
+    });   
 }
 
 xhttp1.open("GET", "https://jsonplaceholder.typicode.com/albums", false);
