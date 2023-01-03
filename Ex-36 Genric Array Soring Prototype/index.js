@@ -10,7 +10,7 @@ Array.prototype.mysorting = function () {
 
     })
 }
-console.log(text.mysorting());
+console.log(a.mysorting());
 
 
 
