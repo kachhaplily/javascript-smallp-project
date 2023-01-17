@@ -17,6 +17,9 @@ display = async (id) => {
   
 
 }
+for (const iterator of object) {
+    
+}
 display(1);
 displaybtn=()=>{
     // document.getElementById('btncontainer').innerHTML += ` <button onclick="pre()">next</button>`

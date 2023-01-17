@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG grid</title>
+    <style media="only screen">
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        html {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            overflow: auto;
+        } 
+
+         body {
+            padding: 1rem;
+            overflow: auto;
+        }
+        .imgbox{
+            max-width: 100%;
+            background: yellow;
+        }
+        .imgbox img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myGrid" class="ag-theme-alpine" style="height: 100%">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@29.0.0/dist/ag-grid-community.min.js">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
